@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<HTML>
+
+<HEAD>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <TITLE>Example HomeBuyer Report - HouzeCheck (1)</TITLE>
+    <META name="generator" content="BCL easyConverter SDK 5.0.210">
+    <link rel="stylesheet" href="https://reportadmin.herokuapp.com/homebuyer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            counter-reset: page 1;
+        }
+
+        .img1 {
+            margin-top: 3em;
+            width: 11em;
+            margin-left: 40em;
+        }
+
+        .img2 {
+            width: 50em;
+            margin: auto;
+            display: block;
+            margin-top: 15em;
+        }
+
+        .div1 {
+
+            margin-top: 15em;
+        }
+
+        #page2Content {
+            font-family: Century Schoolbook;
+            margin-left: 5em;
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 10em;
+        }
+
+        .underPara {
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 20em;
+        }
+
+        .pageNumber::after {
+            counter-increment: page;
+            content: counter(page);
+        }
+
+        .header1 {
+            font-family: Century Schoolbook;
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 14em;
+        }
+
+
+
+
+        .content-block {
+            position: absolute;
+            overflow: visible;
+            overflow: auto
+        }
+
+        .tt1 {
+            border-bottom: 1px solid #a0a4b0;
+        }
+
+        .tt1 tr:last-child td:last-child {
+            border-bottom: 1px solid #a0a4b0;
+            width: 18em;
+        }
+
+        .tt1 tr {
+            line-height: 1px;
+        }
+
+        .para {
+            padding-left: 0.5em;
+            line-height: 1.5em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            padding-right: 0.1px;
+            font-size: 14px;
+        }
+    </style>
+</HEAD>
+
+<BODY>
+    <DIV id="page_6" style="page-break-before: always">
+        <DIV id="id6_1">
+            <P class="p43 ft18">This section provides our overall opinion of the property, highlighting areas of
+                concern, and summarises the condition ratings of different elements of the property (with only the worst
+                rating per element being inputted in the tables). It also provides a summary of repairs (and cost
+                guidance where agreed) and recommendations for further investigations.</P>
+            <P class="p44 ft18">To make sure you get a balanced impression of the property, we strongly recommend that
+                you read all sections of the report, in particular the 'What to do now' section, and discuss in detail
+                with us.
+            </P>
+            <div style="border-bottom: 1px solid #a0a4b0;width: 35em;margin-left: 11em;padding-top: 2em;
+        margin-bottom: -1em;"></div>
+            <P class="p46 ft31">Our overall opinion of the property</P>
+            <div style="border: 1px solid #a0a4b0;width: 35em;margin-left: 11em;margin-top: 11px;">
+                <P class="p47 ft30 para">{{breaklines1 C1}}</P>
+            </div>
+            <table style="margin-top: 1em;margin-left: 4em;">
+                <tr>
+                    <td>
+                        <img src="https://reportadmin.herokuapp.com/images/homebuyer/3.png" style="width: 3.8em;">
+                    </td>
+                    <td style="padding-left: 3em;">
+                        <P class="p24 ft32">Section of the report</P>
+                    </td>
+                    <td style="padding-left: 5em;">
+                        <P class="p50 ft32">Element</P>
+                        <P class="p50 ft32">Number</P>
+                    </td>
+                    <td style="padding-left: 1em;">
+                        <P class="p51 ft32">Element Name</P>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin-top: 1em;margin-left: 11em;" class="tt1">
+                {{#C2S1}}
+                <tr>
+                    <td style="border-right: 1px solid #a0a4b0;">
+                        <div style="width: 10em;">
+                            <p style="font-size: 15px;">{{report}}</p>
+                        </div>
+                    </td>
+                    <td style="padding-left: 1.5em;border-right: 1px solid #a0a4b0;padding-right: 2em;">
+                        <p style="font-size: 15px;">{{number}}</p>
+                    </td>
+                    <td>
+                        <p style="font-size: 13px;margin-left: 1.2em;">{{name}}</p>
+                    </td>
+                </tr>
+                {{/C2S1}}
+            </table>
+
+            <table style="margin-top: 1em;margin-left: 4em;">
+                <tr>
+                    <td>
+                        <img src="https://reportadmin.herokuapp.com/images/homebuyer/2.png" style="width: 3.8em;">
+                    </td>
+                    <td style="padding-left: 3em;">
+                        <P class="p24 ft32">Section of the report</P>
+                    </td>
+                    <td style="padding-left: 5em;">
+                        <P class="p50 ft32">Element</P>
+                        <P class="p50 ft32">Number</P>
+                    </td>
+                    <td style="padding-left: 1em;">
+                        <P class="p51 ft32">Element Name</P>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin-top: 1em;margin-left: 11em;" class="tt1">
+                {{#C2S2}}
+                <tr>
+                    <td style="border-right: 1px solid #a0a4b0;">
+                        <div style="width: 11.5em;">
+                            <p style="font-size: 15px;">{{report}}</p>
+                        </div>
+                    </td>
+                    <td style="padding-left: 1.5em;border-right: 1px solid #a0a4b0;padding-right: 2.5em;">
+                        <p style="font-size: 15px;">{{number}}</p>
+                    </td>
+                    <td>
+                        <p style="font-size: 15px;margin-left: 1.2em;">{{name}}</p>
+                    </td>
+                </tr>
+                {{/C2S2}}
+            </table>
+
+            <table style="margin-top: 2em;margin-left: 4em;">
+                <tr>
+                    <td>
+                        <img src="https://reportadmin.herokuapp.com/images/homebuyer/1.png" style="width: 3.8em;">
+                    </td>
+                    <td style="padding-left: 3em;">
+                        <P class="p24 ft32">Section of the report</P>
+                    </td>
+                    <td style="padding-left: 5em;">
+                        <P class="p50 ft32">Element</P>
+                        <P class="p50 ft32">Number</P>
+                    </td>
+                    <td style="padding-left: 1em;">
+                        <P class="p51 ft32">Element Name</P>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin-top: 1em;margin-left: 11em;" class="tt1">
+                {{#C2S3}}
+                <tr>
+                    <td style="border-right: 1px solid #a0a4b0;">
+                        <div style="width: 11.5em;">
+                            <p style="font-size: 15px;">{{report}}</p>
+                        </div>
+                    </td>
+                    <td style="padding-left: 1.5em;border-right: 1px solid #a0a4b0;padding-right: 2.5em;">
+                        <p style="font-size: 15px;">{{number}}</p>
+                    </td>
+                    <td>
+                        <p style="font-size: 15px;margin-left: 1.2em;">{{name}}</p>
+                    </td>
+                </tr>
+                {{/C2S3}}
+            </table>
+            <P class="p46 ft31">Further investigations</P>
+            <P class="p44 ft18">Further investigations should be obtained prior to legal commitment to purchase the
+                property (see 'What to do now')
+            </P>
+            <div style="border: 1px solid #a0a4b0;width: 35em;margin-left: 11em;margin-top: 11px;">
+                <P class="p47 ft30 para">{{breaklines1 C4}}</P>
+            </div>
+        </DIV>
+    </DIV>
+</BODY>
+
+</HTML>

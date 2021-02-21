@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<HTML>
+
+
+<HEAD>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <TITLE>Example HomeBuyer Report - HouzeCheck (1)</TITLE>
+    <META name="generator" content="BCL easyConverter SDK 5.0.210">
+    <link rel="stylesheet" href="https://reportadmin.herokuapp.com/homebuyer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            counter-reset: page 1;
+        }
+
+        .img1 {
+            margin-top: 3em;
+            width: 11em;
+            margin-left: 40em;
+        }
+
+        .img2 {
+            width: 50em;
+            margin: auto;
+            display: block;
+            margin-top: 15em;
+        }
+
+        .div1 {
+
+            margin-top: 15em;
+        }
+
+        #page2Content {
+            font-family: Century Schoolbook;
+            margin-left: 5em;
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 10em;
+        }
+
+        .underPara {
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 20em;
+        }
+
+        .pageNumber::after {
+            counter-increment: page;
+            content: counter(page);
+        }
+
+        .header1 {
+            font-family: Century Schoolbook;
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 14em;
+        }
+
+
+
+
+        .content-block {
+            position: absolute;
+            overflow: visible;
+            overflow: auto
+        }
+
+        .tt1 {
+            border-bottom: 1px solid #a0a4b0;
+        }
+
+        .tt1 tr:last-child td:last-child {
+            border-bottom: 1px solid #a0a4b0;
+            width: 18em;
+        }
+
+        .tt1 tr {
+            line-height: 1px;
+        }
+
+        .tt2 tr td:first-child {
+            vertical-align: baseline;
+        }
+
+        .para {
+            padding-left: 0.5em;
+            line-height: 1.5em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            padding-right: 0.1px;
+            font-size: 14px;
+        }
+    </style>
+</HEAD>
+
+<BODY>
+    <DIV id="page_11" style="counter-reset:page {{num}};">
+
+        <div style="margin-top: -1em;">
+            <div style="margin-left: 8.5em; margin-top:-1em">
+                <P class="p80 ft31">Limitations to inspection</P>
+                {{#if H0.rating}}
+                <div style="border: 1px solid #a0a4b0;
+                margin-right: 6em;font-size: 15px;width:38em;" class="para">{{breaklines1 H0.value}}</div><br>
+                {{else}}
+                <div style="border: 1px solid #a0a4b0;
+                margin-right: 6em;font-size: 15px;width:38em;" class="para">{{breaklines1 H0}}</div><br>
+                {{/if}}
+                <div style="text-align: end;margin-right:5em;">
+                    <img src="https://reportadmin.herokuapp.com/images/homebuyer/123n.PNG">
+                </div>
+            </div>
+
+            <table style="margin-top:1em;margin-left: 4em;border-collapse:separate;border-spacing:0 11px;" class="tt2">
+                <tr>
+                    <td>
+                        <div style="text-align: end;font-size: 13px;">
+                            H1<br>
+                            Garage
+                        </div>
+                    </td>
+                    <td style="padding-left: 1.4em;">
+                        <div style="margin-right: 6em;
+                border: 1px solid #a0a4b0;
+                font-size: 15px;width:38em;
+            ">
+                            <table>
+                                <tr>
+                                    <td class="para">
+                                        {{#if H1.rating}}
+                                        {{breaklines1 H1.value}}
+                                        {{else}}
+                                        {{breaklines1 H1}}
+                                        {{/if}}
+                                    </td>
+                                    <td style="vertical-align: top;">
+                                        {{#ifEquals H1.rating 1}}
+                                        <img src="https://reportadmin.herokuapp.com/images/homebuyer/s1.PNG">
+                                        {{else}}
+                                        {{#ifEquals H1.rating 2}}
+                                        <img src="https://reportadmin.herokuapp.com/images/homebuyer/s2.PNG">
+                                        {{else}}
+                                        {{#ifEquals H1.rating 3}}
+                                        <img src="https://reportadmin.herokuapp.com/images/homebuyer/s3.PNG">
+                                        {{else}}
+                                        <img src="https://reportadmin.herokuapp.com/images/homebuyer/sni.png">
+                                        {{/ifEquals}}{{/ifEquals}}{{/ifEquals}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                {{#each H1.images}}
+                <tr>
+                    <td></td>
+                    <td style="text-align: center;">
+                        <div class="image">
+                            <img src="{{{image_url}}}"
+                                style="width:30em;display: block;margin-left: auto;margin-right: auto;" />
+                            <p>{{caption}}</p>
+                        </div>
+                    </td>
+                </tr>
+                {{/each}}
+
+                <tr>
+                    <td>
+                        <div style="text-align: end;font-size: 13px;">
+                            H2<br>
+                            Other
+                        </div>
+                    </td>
+                    <td style="padding-left: 1.4em;">
+                        <div style="margin-right: 6em;
+                border: 1px solid #a0a4b0;
+                font-size: 15px;width:38em;
+            ">
+                            <table>
+                                <tr>
+                                    <td class="para">
+                                        {{#if H2.rating}}
+                                        {{breaklines1 H2.value}}
+                                        {{else}}
+                                        {{breaklines1 H2}}
+                                        {{/if}}
+                                    </td>
+                                    <td style="vertical-align: top;">
+                                        {{#ifEquals H2.rating 1}}
+                                        <img src="https://reportadmin.herokuapp.com/images/homebuyer/s1.PNG">
+                                        {{else}}
+                                        {{#ifEquals H2.rating 2}}
+                                        <img src="https://reportadmin.herokuapp.com/images/homebuyer/s2.PNG">
+                                        {{else}}
+                                        {{#ifEquals H2.rating 3}}
+                                        <img src="https://reportadmin.herokuapp.com/images/homebuyer/s3.PNG">
+                                        {{else}}
+                                        <img src="https://reportadmin.herokuapp.com/images/homebuyer/sni.png">
+                                        {{/ifEquals}}{{/ifEquals}}{{/ifEquals}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                {{#each H2.images}}
+                <tr>
+                    <td></td>
+                    <td style="text-align: center;">
+                        <div class="image">
+                            <img src="{{{image_url}}}"
+                                style="width:30em;display: block;margin-left: auto;margin-right: auto;" />
+                            <p>{{caption}}</p>
+                        </div>
+                    </td>
+                </tr>
+                {{/each}}
+
+                <tr>
+                    <td>
+                        <div style="text-align: end;font-size: 13px;">
+                            H3<br>
+                            General
+                        </div>
+                    </td>
+                    <td style="padding-left: 1.4em;">
+                        <div style="margin-right: 6em;
+                border: 1px solid #a0a4b0;
+                font-size: 15px;width:38em;
+            ">
+                            <table>
+                                <tr>
+                                    <td class="para">
+                                        {{#if H3.rating}}
+                                        {{breaklines1 H3.value}}
+                                        {{else}}
+                                        {{breaklines1 H3}}
+                                        {{/if}}
+                                    </td>
+                                    <td style="vertical-align: top;">
+                                        {{#ifEquals H3.rating 1}}
+                                        <img src="https://reportadmin.herokuapp.com/images/homebuyer/s1.PNG">
+                                        {{else}}
+                                        {{#ifEquals H3.rating 2}}
+                                        <img src="https://reportadmin.herokuapp.com/images/homebuyer/s2.PNG">
+                                        {{else}}
+                                        {{#ifEquals H3.rating 3}}
+                                        <img src="https://reportadmin.herokuapp.com/images/homebuyer/s3.PNG">
+                                        {{else}}
+                                        <img src="https://reportadmin.herokuapp.com/images/homebuyer/sni.png">
+                                        {{/ifEquals}}{{/ifEquals}}{{/ifEquals}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                {{#each H3.images}}
+                <tr>
+                    <td></td>
+                    <td style="text-align: center;">
+                        <div class="image">
+                            <img src="{{{image_url}}}"
+                                style="width:30em;display: block;margin-left: auto;margin-right: auto;" />
+                            <p>{{caption}}</p>
+                        </div>
+                    </td>
+                </tr>
+                {{/each}}
+            </table>
+        </div>
+    </DIV>
+</BODY>
+
+</HTML>

@@ -1,0 +1,36 @@
+{
+    "paths": [
+        {
+            "name": "/api",
+            "lambdaFunction": "pdfreportfunction",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/api"
+        }
+    ],
+    "resourceName": "pdfreportapi",
+    "apiName": "pdfreportapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "pdfreportfunction"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-pdfreport-dev-202731-authRole",
+        "unAuthRoleName": "amplify-pdfreport-dev-202731-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "pdfreportfunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "f3addf20"
+}

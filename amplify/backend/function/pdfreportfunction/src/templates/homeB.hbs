@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<HTML>
+
+<HEAD>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <TITLE>Example HomeBuyer Report - HouzeCheck (1)</TITLE>
+    <META name="generator" content="BCL easyConverter SDK 5.0.210">
+    <link rel="stylesheet" href="https://reportadmin.herokuapp.com/homebuyer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            counter-reset: page 1;
+        }
+
+        .img1 {
+            margin-top: 3em;
+            width: 11em;
+            margin-left: 40em;
+        }
+
+        .img2 {
+            width: 50em;
+            margin: auto;
+            display: block;
+            margin-top: 15em;
+        }
+
+        .div1 {
+
+            margin-top: 15em;
+        }
+
+        #page2Content {
+            font-family: Century Schoolbook;
+            margin-left: 5em;
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 10em;
+        }
+
+        .underPara {
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 20em;
+        }
+
+        .pageNumber::after {
+            counter-increment: page;
+            content: counter(page);
+        }
+
+        .header1 {
+            font-family: Century Schoolbook;
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 14em;
+        }
+
+
+
+
+        .content-block {
+            position: absolute;
+            overflow: visible;
+            overflow: auto
+        }
+
+        .tt1 {
+            border-bottom: 1px solid #a0a4b0;
+        }
+
+        .tt1 tr:last-child td:last-child {
+            border-bottom: 1px solid #a0a4b0;
+            width: 18em;
+        }
+
+        .tt1 tr {
+            line-height: 1px;
+        }
+
+        .para {
+            padding-left: 0.5em;
+            padding-top: 0.5em;
+            font-size: 13px;
+        }
+    </style>
+</HEAD>
+
+<BODY>
+    <DIV id="page_4">
+
+        <div style="margin-top: 1.5em;">
+            <table>
+                <tr>
+                    <td>
+                        <P class="p23 ft2">Surveyor's name</P>
+                    </td>
+
+                    <td style="padding-bottom: 1em;">
+                        {{#if A0S4}}
+                        <div style="
+                    border: 1px solid #a0a4b0;
+                    width: 35em;
+                ">
+                            <p class="para">{{breaklines A0S4}}</p>
+                        </div>
+                        {{else}}
+                        <div style="
+                    border: 1px solid #a0a4b0;
+                    height: 2.5em;
+                    width: 35em;
+                ">
+                            <p class="para"></p>
+                        </div>
+                        {{/if}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <P class="p23 ft2">Surveyor's RICS number</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        {{#if A0S5}}
+                        <div style="
+                    border: 1px solid #a0a4b0;
+                    width: 35em;
+                ">
+                            <p class="para">{{breaklines A0S5}}</p>
+                        </div>
+                        {{else}}
+                        <div style="
+                    border: 1px solid #a0a4b0;
+                    height: 2.5em;
+                    width: 35em;
+                ">
+                            <p class="para"></p>
+                        </div>
+                        {{/if}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <P class="p23 ft2">Company name</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        {{#if A0S11}}
+                        <div style="
+                    border: 1px solid #a0a4b0;
+                    width: 35em;
+                ">
+                            <p class="para">{{breaklines A0S11}}</p>
+                        </div>
+                        {{else}}
+                        <div style="
+                    border: 1px solid #a0a4b0;
+                    height: 2.5em;
+                    width: 35em;
+                ">
+                            <p class="para"></p>
+                        </div>
+                        {{/if}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <P class="p23 ft2">Date of the inspection</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        <div class="row">
+                            <div class="col">
+                                <div style="border: 1px solid #a0a4b0;
+                            height: 2.5em;
+                            width: 12em;
+                 ">
+                                    <p class="para">{{breaklines A0S2}}</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <P class="ft2" style="padding-top: 1em;margin-left: -1em;">Report reference number</P>
+                            </div>
+                            <div class="col">
+                                <div class="col">
+                                    <div style="margin-right: -1em;
+                                border: 1px solid #a0a4b0;
+                                height: 2em;
+                                width: 12.5em;
+                                margin-left: -4em;
+                     ">
+                                        <p class="para">{{breaklines A0S6}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <P class="p25 ft2">Related party disclosure</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        {{#if B2}}
+                        <div style="
+                    border: 1px solid #a0a4b0;
+                    width: 35em;
+                ">
+                            <p class="para">{{breaklines B2}}</p>
+                        </div>
+                        {{else}}
+                        <div style="
+                    border: 1px solid #a0a4b0;
+                    height: 2.5em;
+                    width: 35em;
+                ">
+                            <p class="para"></p>
+                        </div>
+                        {{/if}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <P class="p25 ft2">Full address</P>
+                        <P class="p25 ft2"> and postcode</P>
+                        <P class="p25 ft2"> of the property</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        {{#if A0S9}}
+                        <div style="
+                    border: 1px solid #a0a4b0;
+                    width: 35em;
+                ">
+                            <p class="para">{{breaklines A0S9}}</p>
+                        </div>
+                        {{else}}
+                        <div style="
+                    border: 1px solid #a0a4b0;
+                    height: 2.5em;
+                    width: 35em;
+                ">
+                            <p class="para"></p>
+                        </div>
+                        {{/if}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <P class="p25 ft2">Weather conditions</P>
+                        <P class="p25 ft2"> when the inspection</P>
+                        <P class="p25 ft2"> took place</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        {{#if B4}}
+                        <div style="
+                    border: 1px solid #a0a4b0;
+                    width: 35em;
+                ">
+                            <p class="para">{{breaklines B4}}</p>
+                        </div>
+                        {{else}}
+                        <div style="
+                    border: 1px solid #a0a4b0;
+                    height: 2.5em;
+                    width: 35em;
+                ">
+                            <p class="para"></p>
+                        </div>
+                        {{/if}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <P class="p25 ft2">The status of the</P>
+                        <P class="p25 ft2"> property when the</P>
+                        <P class="p25 ft2"> inspection took place</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        {{#if B5}}
+                        <div style="
+                    border: 1px solid #a0a4b0;
+                    width: 35em;
+                ">
+                            <p class="para">{{breaklines B5}}</p>
+                        </div>
+                        {{else}}
+                        <div style="
+                    border: 1px solid #a0a4b0;
+                    height: 2.5em;
+                    width: 35em;
+                ">
+                            <p class="para"></p>
+                        </div>
+                        {{/if}}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </DIV>
+    <DIV id="page_5" style="page-break-before: always">
+        <DIV style="margin-top:-2em;">
+            <P class="p30 ft18">We inspect the inside and outside of the main building and all permanent outbuildings,
+                but we do not force or open up the fabric. We also inspect the parts of the electricity, gas/oil, water,
+                heating and drainage services that can be seen, but we do not test them.</P>
+            <P class="p31 ft18">To help describe the condition of the home, we give condition ratings to the main parts
+                (the 'elements') of the building, garage and some parts outside. Some elements can be made up of several
+                different parts.</P>
+            <P class="p32 ft18">In the element boxes in parts E, F, G and H, we describe the part that has the worst
+                condition rating first and then briefly outline the condition of the other parts. The condition ratings
+                are described as follows.</P>
+            <img src="https://reportadmin.herokuapp.com/images/homebuyer/123.PNG"
+                style="padding-left: 121px;padding-top: 2em;">
+            <P class="p36 ft18">The report covers matters that, in the surveyor's opinion, need to be dealt with or may
+                affect the value of the property.</P>
+            <P class="p37 ft17">Important note: We carry out only a visual inspection. This means that we do not take up
+                carpets, floor coverings or floorboards, move furniture or remove the contents of cupboards. Also, we do
+                not remove secured panels or undo electrical fittings.</P>
+            <P class="p38 ft17">We inspect roofs, chimneys and other surfaces on the outside of the building from ground
+                level and, if necessary, from neighbouring public property and with the help of binoculars.</P>
+            <P class="p39 ft17">We inspect the roof structure from inside the roof space if there is access (although we
+                do not move or lift insulation material, stored goods or other contents). We examine floor surfaces and
+                under­floor spaces so far as there is safe access to these (although we do not move or lift furniture,
+                floor coverings or other contents). We are not able to assess the condition of the inside of any
+                chimney, boiler or other flues.</P>
+            <P class="p40 ft17">We note in our report if we are not able to check any parts of the property that the
+                inspection would normally cover. If we are concerned about these parts, the report will tell you about
+                any further investigations that are needed.</P>
+            <P class="p41 ft17" style="padding-bottom: 1em;">We do not report on the cost of any work to put right
+                defects or make recommendations on
+                how these repairs should be carried out. Some maintenance and repairs we suggest may be expensive.</P>
+            <div class="underPara" style="margin-left: 181px;width: 36em;"></div>
+        </DIV>
+    </DIV>
+</BODY>
+
+</HTML>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<HTML>
+
+
+<HEAD>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <TITLE>Example HomeBuyer Report - HouzeCheck (1)</TITLE>
+    <META name="generator" content="BCL easyConverter SDK 5.0.210">
+    <link rel="stylesheet" href="https://reportadmin.herokuapp.com/homebuyer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            counter-reset: page 1;
+        }
+
+        .img1 {
+            margin-top: 3em;
+            width: 11em;
+            margin-left: 40em;
+        }
+
+        .img2 {
+            width: 50em;
+            margin: auto;
+            display: block;
+            margin-top: 15em;
+        }
+
+        .div1 {
+
+            margin-top: 15em;
+        }
+
+        #page2Content {
+            font-family: Century Schoolbook;
+            margin-left: 5em;
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 10em;
+        }
+
+        .underPara {
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 20em;
+        }
+
+        .pageNumber::after {
+            counter-increment: page;
+            content: counter(page);
+        }
+
+        .header1 {
+            font-family: Century Schoolbook;
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 14em;
+        }
+
+
+
+
+        .content-block {
+            position: absolute;
+            overflow: visible;
+            overflow: auto
+        }
+
+        .tt1 {
+            border-bottom: 1px solid #a0a4b0;
+        }
+
+        .tt1 tr:last-child td:last-child {
+            border-bottom: 1px solid #a0a4b0;
+            width: 18em;
+        }
+
+        .tt1 tr {
+            line-height: 1px;
+        }
+
+        .para {
+            padding-left: 0.5em;
+            line-height: 1.5em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            padding-right: 0.1px;
+            font-size: 14px;
+        }
+    </style>
+</HEAD>
+
+<BODY>
+    <DIV id="page_11" style="counter-reset:page {{num}};overflow:visible;">
+        <div style="margin-top: -1em;">
+            <div class="t258 ft46" style="margin-left:-3em;">
+                "I confirm that I have inspected the property and prepared this report, and the Market Value given in
+                the report."
+            </div>
+            <table style="margin-left:-5em">
+                <tr>
+                    <td>
+                        <P class="p23 ft2" style="text-align:right;padding-right:2em;">Signature</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        <div style="
+                    border: 1px solid #a0a4b0;
+
+                ">
+                            <img src="{{L1S1}}" style="width: 9em;" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <P class="p23 ft2" style="text-align:right;padding-right:2em;">Surveyor's RICS number</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div style="border: 1px solid #a0a4b0;width: 5em;">
+                                        <div class="para">{{ L1S2}}</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="ft2">Qualifications</p>
+                                </td>
+                                <td>
+                                    <div style="border: 1px solid #a0a4b0;width: 24.5em;">
+                                        <div class="para">{{ L1S3}}</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        <p style="margin-top:-1em;">For and on behalf of</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <P class="p23 ft2" style="text-align:right;padding-right:2em;">Company</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        <div style="
+                    border: 1px solid #a0a4b0;
+                    
+                    width: 35em;
+                ">
+                            <div class="para">{{ L1S4}}</div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <P class="p23 ft2" style="text-align:right;padding-right:2em;">Address</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        <div style="
+                    border: 1px solid #a0a4b0;
+                    
+                    width: 35em;
+                ">
+                            <div class="para">{{ L1S5}}</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <P class="p23 ft2" style="text-align:right;padding-right:2em;">Town</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div style="border: 1px solid #a0a4b0;width: 15em;">
+                                        <div class="para">{{ L1S6}}</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="ft2">County</p>
+                                </td>
+                                <td>
+                                    <div style="border: 1px solid #a0a4b0;width: 16.5em;">
+                                        <div class="para">{{ L1S7}}</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <P class="p23 ft2" style="text-align:right;padding-right:2em;">Postcode</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div style="border: 1px solid #a0a4b0;width: 15em;">
+                                        <div class="para">{{ L1S8}}</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="ft2">Phone Number</p>
+                                </td>
+                                <td>
+                                    <div style="border: 1px solid #a0a4b0;width: 14em;">
+                                        <div class="para">{{ L1S9}}</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <P class="p23 ft2" style="text-align:right;padding-right:2em;">Website</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div style="border: 1px solid #a0a4b0;width: 15em;">
+                                        <div class="para">{{ L1S10}}</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="ft2">Fax number</p>
+                                </td>
+                                <td>
+                                    <div style="border: 1px solid #a0a4b0;width: 14em;">
+                                        <div class="para">{{ L1S11}}</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <P class="p23 ft2" style="text-align:right;padding-right:2em;">Email</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        <div style="
+                    border: 1px solid #a0a4b0;
+                    
+                    width: 35em;
+                ">
+                            <div class="para">{{ L1S12}}</div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <P class="p23 ft2" style="text-align:right;padding-right:2em;">Property address</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        <div style="
+                    border: 1px solid #a0a4b0;
+                    
+                    width: 35em;
+                ">
+                            <div class="para">{{ L1S13}}</div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <P class="p23 ft2" style="text-align:right;padding-right:2em;">Client's Name</P>
+                    </td>
+                    <td style="padding-bottom: 1em;">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div style="border: 1px solid #a0a4b0;width: 15em;">
+                                        <div class="para">{{ L1S14}}</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="ft2">
+                                        Date this report<br>
+                                        was produced
+                                    </div>
+                                </td>
+                                <td>
+                                    <div style="border: 1px solid #a0a4b0;width: 14em;">
+                                        <div class="para">{{ L1S15}}</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+            <div style="margin-left:7.9em; margin-top:-1em;">
+                <p class="p3 ft31">RICS Disclaimers</p>
+                <p class="p270 ft32" style="margin-top:-0.2em;"><span class="ft32">1.</span><span class="ft49">This
+                        report
+                        has been prepared by a
+                        surveyor ('the Employee') on behalf of a firm or company of surveyors ('the Employer'). The
+                        statements and opinions expressed in this report are expressed on behalf of the Employer, who
+                        accepts full responsibility for these.</span></p>
+                <p class="p271 ft32">Without prejudice and separately to the above, the Employee will have no personal
+                    liability in respect of any statements and opinions contained in this report, which shall at all
+                    times
+                    remain the sole responsibility of the Employer to the exclusion of the Employee.</p>
+                <p class="p272 ft32">In the case of sole practitioners, the surveyor may sign the report in his or her
+                    own
+                    name unless the surveyor operates as a sole trader limited liability company.</p>
+                <p class="p273 ft32">To the extent that any part of this notification is a restriction of liability
+                    within
+                    the meaning of the Unfair Contract Terms Act 1977 it does not apply to death or personal injury
+                    resulting from negligence.</p>
+                <p class="p274 ft32"><span class="ft32">2.</span><span class="ft49">This document is issued in blank
+                        form by
+                        the Royal Institution of Chartered Surveyors (RICS) and is available only to parties who have
+                        signed
+                        a licence agreement with RICS.</span></p>
+                <p class="p275 ft32">RICS gives no representations or warranties, express or implied, and no
+                    responsibility
+                    or liability is accepted for the accuracy or completeness of the information inserted in the
+                    document or
+                    any other written or oral information given to any interested party or its advisers. Any such
+                    liability
+                    is expressly disclaimed.</p>
+            </div>
+        </div>
+    </DIV>
+</BODY>
+
+</HTML>

@@ -1,0 +1,29 @@
+{
+  "name": "pdfreportfunction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.846.0",
+    "aws-serverless-express": "^3.3.5",
+    "base64topdf": "^1.1.8",
+    "body-parser": "^1.17.1",
+    "bull": "^3.20.1",
+    "chrome-aws-lambda": "^7.0.0",
+    "connect-timeout": "^1.9.0",
+    "express": "^4.15.2",
+    "express-async-handler": "^1.1.4",
+    "fs-extra": "^9.1.0",
+    "handlebars": "^4.7.7",
+    "hummus-lambda": "^2.0.0",
+    "memory-streams": "^0.1.3",
+    "path": "^0.12.7",
+    "puppeteer-core": "^7.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

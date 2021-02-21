@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-pdfreport-dev-202731-authRole",
+      "UnauthRoleArn": "arn:aws:iam::931093551312:role/amplify-pdfreport-dev-202731-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::931093551312:role/amplify-pdfreport-dev-202731-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-pdfreport-dev-202731-deployment",
+      "UnauthRoleName": "amplify-pdfreport-dev-202731-unauthRole",
+      "StackName": "amplify-pdfreport-dev-202731",
+      "StackId": "arn:aws:cloudformation:eu-west-2:931093551312:stack/amplify-pdfreport-dev-202731/2438cbf0-6f9e-11eb-a449-02b4d596eaf8",
+      "AmplifyAppId": "diawvnu97x57m"
+    },
+    "categories": {
+      "function": {
+        "pdfreportfunction": {
+          "deploymentBucketName": "amplify-pdfreport-dev-202731-deployment",
+          "s3Key": "amplify-builds/pdfreportfunction-386b642b2b2f426c5751-build.zip"
+        }
+      }
+    }
+  }
+}

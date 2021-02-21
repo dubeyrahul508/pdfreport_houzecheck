@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+
+<HEAD>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <TITLE>Sample Valuation Report (1)</TITLE>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://reportadmin.herokuapp.com/new.css">
+    <link rel="stylesheet" href="https://reportadmin.herokuapp.com/new1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        * {
+            font-family: serif;
+        }
+
+        header {
+            margin-left: 4em;
+            top: 2em;
+        }
+    </style>
+</HEAD>
+
+<BODY>
+
+    <DIV id="page_1">
+        <div id="p1dimg1">
+            <div class="logo">
+                <img src="https://reportadmin.herokuapp.com/images/houzeCheckNew.png" style="width: 15em;">
+                <img src="https://reportadmin.herokuapp.com/images/rics11.jpg" style="width:6em;margin-left: 1em;">
+            </div>
+            <div class="Rectangle1">
+                <h2>Residential Valuation Report</h2>
+            </div>
+            <div class="logo1">
+                {{#each A0.images}}
+                <img src="{{image_url}}" style="width: 16em;margin-bottom:2em;">
+                {{/each}}
+            </div>
+            <div class="text1">
+                <p style="font-size: 1.1em;color:#00AFE4" class="dd">
+                    <i>
+                        &quot;A professional opinion on the
+                        value of a property for a specified
+                        purpose&quot;
+                    </i>
+                </p>
+            </div>
+            <div class="Rectangle" style="height: 100em;">
+                <div>
+                    <div style="margin-top: 3em;">
+                        <h2><b>Client: {{breaklines A02}} </b></h2>
+                        <h2><b> Address: {{breaklines A03}}</b></h2>
+
+
+                    </div>
+
+                    <div style="margin-top:33em;margin-bottom:1em;">
+                        <h2><b>Date of Inspection: {{breaklines A05}}</b></h2>
+                        <h2 style="margin-bottom: 1.8rem"><b>Date of Report: {{breaklines A06}}</b></h2>
+                        <h2><b>Prepared By:</b></h2>
+                        <h2><b>{{breaklines A07}}</b></h2>
+                        <h2><b>{{breaklines A08}}</b></h2>
+                        <h2><b>{{breaklines A09}}</b></h2>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </DIV>
+</BODY>
+
+</HTML>

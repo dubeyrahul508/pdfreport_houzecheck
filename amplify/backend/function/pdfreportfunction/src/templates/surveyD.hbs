@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<HTML>
+
+
+<HEAD>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <TITLE>Example HomeBuyer Report - HouzeCheck (1)</TITLE>
+    <META name="generator" content="BCL easyConverter SDK 5.0.210">
+    <link rel="stylesheet" href="https://reportadmin.herokuapp.com/homebuyer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            counter-reset: page 1;
+        }
+
+        .img1 {
+            margin-top: 3em;
+            width: 11em;
+            margin-left: 40em;
+        }
+
+        .img2 {
+            width: 50em;
+            margin: auto;
+            display: block;
+            margin-top: 15em;
+        }
+
+        .div1 {
+
+            margin-top: 15em;
+        }
+
+        #page2Content {
+            font-family: Century Schoolbook;
+            margin-left: 5em;
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 10em;
+        }
+
+        .underPara {
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 20em;
+        }
+
+        .pageNumber::after {
+            counter-increment: page;
+            content: counter(page);
+        }
+
+        .header1 {
+            font-family: Century Schoolbook;
+            border-bottom: 2px solid #a0a4b0;
+            border-width: thick;
+            width: 14em;
+        }
+
+
+
+
+        .content-block {
+            position: absolute;
+            overflow: visible;
+            overflow: auto
+        }
+
+        .tt1 {
+            border-bottom: 1px solid #a0a4b0;
+        }
+
+        .tt1 tr:last-child td:last-child {
+            border-bottom: 1px solid #a0a4b0;
+            width: 18em;
+        }
+
+        .tt1 tr {
+            line-height: 1px;
+        }
+
+        .para {
+            padding-left: 0.5em;
+            line-height: 1.5em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            padding-right: 0.1px;
+            font-size: 14px;
+        }
+    </style>
+</HEAD>
+
+<BODY>
+    <DIV id="page_8" style="page-break-before: always">
+        <div class="mt-2">
+            <div class="row" style="margin-bottom: 1em;">
+                <div class="col" style="margin-left: 5em;">
+                    <P class="p24 ft2">Type of property</P>
+                </div>
+                <div class="col" style="margin-left: -34em;">
+                    {{#if D1}}
+                    <div style="border: 1px solid #a0a4b0;width: 35em;">
+                        <p class="p73 ft30 para">{{breaklines1 D1}}</p>
+                    </div>
+                    {{else}}
+                    <div style="border: 1px solid #a0a4b0;height:2.5em;width: 35em;">
+                        <p class="p73 ft30 para"></p>
+                    </div>
+                    {{/if}}
+
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 1em;">
+                <div class="col" style="margin-left: 5em;">
+                    <P class="p60 ft2">Approximate year the property was built</P>
+                </div>
+                <div class="col" style="margin-left: -15em;">
+                    {{#if D2S1}}
+                    <div style="border: 1px solid #a0a4b0;width: 25.3em;">
+                        <p class="para">{{breaklines D2S1}}</p>
+                    </div>
+                    {{else}}
+                    <div style="border: 1px solid #a0a4b0;height: 2em;width: 25.3em;">
+                        <p class="para"></p>
+                    </div>
+                    {{/if}}
+
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 1em;">
+                <div class="col" style="margin-left: 5em;">
+                    <P class="p60 ft2">Approximate year the property was extended</P>
+                </div>
+                <div class="col" style="margin-left: -15em;">
+                    {{#if D2S2}}
+                    <div style="border: 1px solid #a0a4b0;width: 25.3em;">
+                        <p class="para">{{breaklines D2S2}}</p>
+                    </div>
+                    {{else}}
+                    <div style="border: 1px solid #a0a4b0;height: 2em;width: 25.3em;">
+                        <p class="para"></p>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 1em;">
+                <div class="col" style="margin-left: 5em;">
+                    <P class="p60 ft2">Approximate year the property was converted</P>
+                </div>
+                <div class="col" style="margin-left: -15em;">
+                    {{#if D2S3}}
+                    <div style="border: 1px solid #a0a4b0;width: 25.3em;">
+                        <p class="para">{{breaklines D2S3}}</p>
+                    </div>
+                    {{else}}
+                    <div style="border: 1px solid #a0a4b0;height: 2em;width: 25.3em;">
+                        <p class="para"></p>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 1em;">
+                <div class="col" style="margin-left: 5em;">
+                    <P class="p60 ft2">Information relevant to flats and maisonettes</P>
+                </div>
+                <div class="col" style="margin-left: -15em;">
+                    <div style="border: 1px solid #a0a4b0;width: 25.3em;">
+                        <p class="para">{{breaklines D5}}</p>
+                    </div>
+                </div>
+            </div>
+            <P class="p24 ft31" style="margin-left: 11em;margin-bottom: 1em;">Accommodation</P>
+            <div style="border: 1px solid #a0a4b0;width:35em;margin-left: 11em;margin-right: 5em;">
+                <P class="p73 ft30 para">{{breaklines1 D0}}</P>
+            </div>
+            <P class="p72 ft31">Construction</P>
+            <div style="border: 1px solid #a0a4b0;width:35em;margin-left: 11em;margin-right: 5em;">
+                <P class="p73 ft30 para">{{breaklines1 D6}}</P>
+            </div>
+            <P class="p72 ft31">Means of escape</P>
+            <div style="border: 1px solid #a0a4b0;width:35em;margin-left: 11em;margin-right: 5em;">
+                <P class="p73 ft30 para">{{breaklines1 D7}}</P>
+            </div>
+            <P class="p72 ft31">Security</P>
+            <div style="border: 1px solid #a0a4b0;width:35em;margin-left: 11em;margin-right: 5em;">
+                <P class="p73 ft30 para">{{breaklines1 D8}}</P>
+            </div>
+        </div>
+
+        <DIV id="id9_2_2" class="mt-2" style="margin-left: 11em;page-break-before:always;">
+            <P class="p3 ft31">Energy</P>
+            <P class="p76 ft18">We have not prepared the Energy Performance Certificate (EPC). If we have seen the
+                EPC, then we will present the ratings here. We have not checked these ratings and so cannot comment
+                on their accuracy.</P>
+            <P class="p77 ft18">We are advised that the property's current energy performance, as recorded in the
+                EPC, is:</P>
+        </DIV>
+        <div>
+            <div class="row" style="margin-bottom: 9px;">
+                <div class="col">
+                    <p style="font-size: 14px;padding-left: 1em;">Energy-­efficiency-rating</p>
+                </div>
+                <div class="col para">
+                    <div style="margin-right: 6em;
+                    border: 1px solid #a0a4b0;
+                    height: 2em;width:40em;
+                    margin-left: -17em;
+                " class="para">{{breaklines D9S1}}</div>
+                </div>
+            </div>
+
+            <div style="margin-left: 10.5em; margin-top:-1em">
+                <P class="p80 ft31">Mains services</P>
+                <P class="p81 ft37">The marked boxes show that the mains services are present.</P>
+                <div class="row" style="margin-left:0em;padding-right: 8em;">
+                    <div class="col">
+                        <div class="row">
+
+                            {{#ifEquals D93.[Gas] "Gas"}}
+                            <img src="https://reportadmin.herokuapp.com/images/homebuyer/checked.PNG">
+                            {{else}}
+                            <img src="https://reportadmin.herokuapp.com/images/homebuyer/unchecked.PNG">
+                            {{/ifEquals}}
+                            <div style="font-size: 15px;">Gas</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+
+                            {{#ifEquals D93.[Electricity] "Electricity"}}
+                            <img src="https://reportadmin.herokuapp.com/images/homebuyer/checked.PNG">
+                            {{else}}
+                            <img src="https://reportadmin.herokuapp.com/images/homebuyer/unchecked.PNG">
+                            {{/ifEquals}}
+                            <div style="font-size: 15px;">Electricity</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+
+                            {{#ifEquals D93.[Water] "Water"}}
+                            <img src="https://reportadmin.herokuapp.com/images/homebuyer/checked.PNG">
+                            {{else}}
+                            <img src="https://reportadmin.herokuapp.com/images/homebuyer/unchecked.PNG">
+                            {{/ifEquals}}
+                            <div style="font-size: 15px;">Water</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+
+                            {{#ifEquals D93.[Drainage] "Drainage"}}
+                            <img src="https://reportadmin.herokuapp.com/images/homebuyer/checked.PNG">
+                            {{else}}
+                            <img src="https://reportadmin.herokuapp.com/images/homebuyer/unchecked.PNG">
+                            {{/ifEquals}}
+                            <div style="font-size: 15px;">Drainage</div>
+                        </div>
+                    </div>
+                </div>
+                <P class="p80 ft31">Central heating</P>
+                <div class="row" style="margin-left:0em;padding-right: 8em;">
+                    <div class="col">
+                        <div class="row">
+
+                            {{#ifEquals D94.[Gas] "Gas"}}
+                            <img src="https://reportadmin.herokuapp.com/images/homebuyer/checked.PNG">
+                            {{else}}
+                            <img src="https://reportadmin.herokuapp.com/images/homebuyer/unchecked.PNG">
+                            {{/ifEquals}}
+                            <div style="font-size: 15px;">Gas</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+
+                            {{#ifEquals D94.[Electric] "Electric"}}
+                            <img src="https://reportadmin.herokuapp.com/images/homebuyer/checked.PNG">
+                            {{else}}
+                            <img src="https://reportadmin.herokuapp.com/images/homebuyer/unchecked.PNG">
+                            {{/ifEquals}}
+                            <div style="font-size: 15px;">Electric</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+
+                            {{#ifEquals D94.[Solid fuel] "Solid fuel"}}
+                            <img src="https://reportadmin.herokuapp.com/images/homebuyer/checked.PNG">
+                            {{else}}
+                            <img src="https://reportadmin.herokuapp.com/images/homebuyer/unchecked.PNG">
+                            {{/ifEquals}}
+                            <div style="font-size: 15px;">Solid fuel</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+
+                            {{#ifEquals D94.[Oil] "Oil"}}
+                            <img src="https://reportadmin.herokuapp.com/images/homebuyer/checked.PNG">
+                            {{else}}
+                            <img src="https://reportadmin.herokuapp.com/images/homebuyer/unchecked.PNG">
+                            {{/ifEquals}}
+                            <div style="font-size: 15px;">Oil</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            {{#ifEquals D94.[None] "None"}}
+                            <img src="https://reportadmin.herokuapp.com/images/homebuyer/checked.PNG">
+                            {{else}}
+                            <img src="https://reportadmin.herokuapp.com/images/homebuyer/unchecked.PNG">
+                            {{/ifEquals}}
+                            <div style="font-size: 15px;">None</div>
+                        </div>
+                    </div>
+                </div>
+                <P class="p80 ft31">Other services or energy sources (including feed­in tariffs)</P>
+                <div style="border: 1px solid #a0a4b0;margin-top:1em;width:41em;
+                margin-right: 5em;" class="para">{{breaklines1 D1S0}}</div>
+                <P class="p80 ft31">Grounds</P>
+                <div style="border: 1px solid #a0a4b0;margin-top:1em;width:41em;
+                margin-right: 5em;" class="para">{{breaklines1 D11}}</div>
+                <P class="p80 ft31">Location</P>
+                <div style="border: 1px solid #a0a4b0;margin-top:1em;width:41em;
+                margin-right: 5em;" class="para">{{breaklines1 D12}}</div>
+            </div>
+        </div>
+
+
+        <div class="mt-2">
+            <div style="margin-left: 10.5em; margin-top:-1em">
+                <P class="p80 ft31">Facilities</P>
+                <div style="border: 1px solid #a0a4b0;margin-top:1em;width:41em;
+                margin-right: 5em;" class="para">{{breaklines1 D13}}</div>
+                <P class="p80 ft31">Local environment</P>
+                <div style="border: 1px solid #a0a4b0;margin-top:1em;width:41em;
+                margin-right: 5em;" class="para">{{breaklines1 D14}}</div>
+                <P class="p80 ft31">Other Local Factors</P>
+                <div style="border: 1px solid #a0a4b0;margin-top:1em;width:41em;
+                margin-right: 5em;" class="para">{{breaklines1 D1S5}}</div>
+            </div>
+        </div>
+    </DIV>
+</BODY>
+
+</HTML>

@@ -1,0 +1,69 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.Rectangle {
+    width: 22em;
+    border: 1px solid #93c6c4;
+    margin-left: 23.5em;
+    margin-bottom: 2em;
+    background-color: #93c6c4;
+}
+
+.Rectangle h2 {
+    font-size: 14px;
+    color: white;
+    line-height: 2em;
+    margin-left: 1.5em;
+}
+
+.logo {
+    z-index: -1;
+    position: absolute;
+    margin: 3em 1em;
+}
+
+.Rectangle1 {
+    width: 42em;
+    position: absolute;
+    margin: 14em 1em;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    padding: 15px 20px;
+    text-align: center;
+    
+}
+
+.Rectangle1 h2{
+    margin: 0px;
+}
+
+.text1 {
+    width: 20em;
+    margin: 23em 1em;
+    position: absolute;
+}
+
+.logo1 {
+    position: absolute;
+    margin: 19em 23.5em;
+}
+
+.header1{
+    width: 48em;
+    border: 1px solid #0085c1;
+    background-color: #0085c1;
+}
+.header2{
+    width: 48em;
+    border-bottom: 15px solid #00afde;
+    background-color: #00afde;
+}
+
+
+.drawline{
+    width: 40em;
+    border-bottom: 15px solid #00afde;
+    background-color: #00afde;
+}
